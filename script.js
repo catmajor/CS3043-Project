@@ -1,9 +1,14 @@
 function locIdToName (locId) {
 	const locations = [
-		"Campus Center",
 		"Library",
+		"Campus Center",
 		"Unity",
-		"Athletic Center"
+		"Science Center",
+		"Innovation Studio",
+		"Fuller Labs",
+		"Atwater Kent",
+		"Salisbury Labs",
+		"Stratton Hall"
 	]
 	return locations[locId] || 'Unknown Location';
 }
