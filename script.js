@@ -16,6 +16,6 @@ function main () {
 	const locationDiv = document.getElementById('location');
 	const urlParams = new URLSearchParams(window.location.search);
 	const loc = urlParams.get('loc') || null;
-	locationDiv.textContent = loc ? `You scanned from: ${locIdToName(loc)}` : 'Location not specified';
+	loc ? locationDiv.textContent =  `You scanned from: ${locIdToName(loc)}` : locationDiv.style.display = 'none';
 }
 main();
