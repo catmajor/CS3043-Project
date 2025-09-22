@@ -46,4 +46,11 @@ body {
     margin-top: 20px;
     flex-grow: 1;
 }
-
+/* learn more link that appears as a small subscript below the main text */
+#learn-more {
+    font-size: 0.4em;
+    margin-left: 5px;
+    vertical-align: sub;
+    color: blue;
+    cursor: pointer;
+}

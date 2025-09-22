@@ -13,9 +13,10 @@ function locIdToName (locId) {
 	return locations[locId] || 'Unknown Location';
 }
 function main () {
-	const locationDiv = document.getElementById('location');
+	const locationP = document.getElementById('location');
+  const subtitleP = document.getElementById('subtitle');
 	const urlParams = new URLSearchParams(window.location.search);
 	const loc = urlParams.get('loc') || null;
-	loc ? locationDiv.textContent =  `You scanned from: ${locIdToName(loc)}` : locationDiv.style.display = 'none';
+	loc ? locationP.textContent =  `You scanned from: ${locIdToName(loc)}` : subtitleP.style.display = 'none';
 }
 main();
