@@ -131,7 +131,38 @@ body {
     border-radius: 0.25em;
 }
 
-/* Wider screens: place cards in a row */
+/* Hamburger control (checkbox hack) */
+.nav-toggle { display: none; }
+
+.hamburger {
+    display: none;
+    color: var(--color-text);
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+.hamburger:hover {
+    background-color: var(--color-navbar-hover-bg);
+}
+
+/* Mobile: hide links, show hamburger; expand when checked */
+@media (max-width: 719px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .hamburger { display: inline-block; }
+    .navbar a { display: none; }
+    #nav-toggle:checked ~ a {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Wider screens: place cards in a row and show normal navbar */
 @media (min-width: 720px) {
     .cards {
         flex-direction: row;
@@ -141,5 +172,6 @@ body {
     .card {
         padding: 20px;
     }
+    .hamburger { display: none; }
 }
 
