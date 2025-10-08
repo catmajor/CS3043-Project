@@ -1,6 +1,5 @@
 function locIdToName (locId) {
 	const locations = [
-    "",
 		"Library",
 		"Campus Center",
 		"Unity",
