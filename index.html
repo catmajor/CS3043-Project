@@ -10,10 +10,10 @@
   <div class="navbar">
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
     <label for="nav-toggle" class="hamburger" aria-label="Open menu">☰ Menu</label>
-    <a href="#home" onclick="this.href = linkWithContext(this.getAttribute('href'))">Home</a>
-     <a href="#paper1" onclick="this.href = linkWithContext(this.getAttribute('href'))">Tracking Online and Data Safety</a>
-     <a href="#paper2" onclick="this.href = linkWithContext(this.getAttribute('href'))">Vu Item</a>
-     <a href="#paper3" onclick="this.href = linkWithContext(this.getAttribute('href'))">Policing and Tracking Using AI</a>
+    <a href="index.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Home</a>
+     <a href="nikita.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Tracking Online and Data Safety</a>
+     <a href="vu.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Vu Item</a>
+     <a href="abhi.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Policing and Tracking Using AI</a>
   </div>
   <div class="banner">
     <h1>Government <span class="highlight">Surveillance</span> and <span class="highlight">Privacy</span></h1>
@@ -25,19 +25,20 @@
     </p>
   </div>
   <div class="cards">
-    <div class="card" onclick="window.location.href = linkWithContext('#paper1')" role="link" tabindex="0">
+    <div class="card" onclick="window.location.href = linkWithContext('nikita.html')" role="link" tabindex="0">
       <h2>Tracking <span class="highlight">Online</span> and Data Safety</h2>
       <p>By Nikita Ostapenko</p>
     </div>
-    <div class="card" onclick="window.location.href = linkWithContext('#paper2')" role="link" tabindex="0">
+    <div class="card" onclick="window.location.href = linkWithContext('vu.html')" role="link" tabindex="0">
       <h2>Vu Item</h2>
       <p>By Vu Nguyen</p>
     </div>
-    <div class="card" onclick="window.location.href = linkWithContext('#paper3')" role="link" tabindex="0">
+    <div class="card" onclick="window.location.href = linkWithContext('abhi.html')" role="link" tabindex="0">
       <h2><span class="highlight">Policing</span> and Tracking Using <span class="highlight">AI</span></h2>
       <p>By Abhi Patel</p>
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="util.js"></script>
 </body>
 </html>
