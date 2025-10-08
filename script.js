@@ -19,4 +19,9 @@ function main () {
 	const loc = urlParams.get('loc') || null;
 	loc ? locationP.textContent =  `You scanned from: ${locIdToName(loc)}` : subtitleP.style.display = 'none';
 }
+function linkWithContext(originalLink) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const loc = urlParams.get('loc') || null;
+  return loc ? `${originalLink}?loc=${loc}` : originalLink;
+}
 main();

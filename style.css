@@ -165,7 +165,6 @@ body {
 /* Wider screens: place cards in a row and show normal navbar */
 @media (min-width: 720px) {
     .cards {
-        flex-direction: row;
         padding: 0 20px;
         gap: 20px;
     }
