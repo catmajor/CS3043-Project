@@ -203,5 +203,5 @@ body {
 }
 
 @media (max-width: 719px) {
-  footer { height: 150px }
+  footer { height: 15vh;}
 }
