@@ -3,12 +3,12 @@ function locIdToName (locId) {
 		"Library",
 		"Campus Center",
 		"Unity",
-		"Science Center",
 		"Innovation Studio",
 		"Fuller Labs",
 		"Atwater Kent",
 		"Salisbury Labs",
-		"Stratton Hall"
+		"Stratton Hall",
+    "Goddard Hall"
 	]
 	return locations[locId] || 'Unknown Location';
 }
