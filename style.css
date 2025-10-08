@@ -202,6 +202,4 @@ body {
     color: var(--color-link-hover);
 }
 
-@media (max-width: 719px) {
-  footer { height: 15vh;}
-}
+
