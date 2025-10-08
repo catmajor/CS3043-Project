@@ -1,24 +1,48 @@
+:root {
+    /* Theme colors */
+    --color-bg: #5e17eb;              /* main background */
+    --color-text: #ffffff;            /* default text */
+    --color-highlight-bg: #c1ff72;    /* highlight background */
+    --color-text-on-highlight: #000000;
+
+    /* Supporting colors (fit theme) */
+    --color-navbar-bg: #1f1f1a;       /* dark olive */
+    --color-navbar-hover-bg: #3a3a2b;
+    --color-surface: #2b2b20;         /* card surface */
+    --color-link: #ffffff;
+    --color-link-hover: #f5f5f5;
+}
+
+::selection {
+    background: var(--color-highlight-bg);
+    color: var(--color-text-on-highlight);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
+
 .navbar {
-    background-color: #333;
+    background-color: var(--color-navbar-bg);
     overflow: hidden;
 }
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: var(--color-text);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--color-navbar-hover-bg);
+    color: var(--color-text);
 }
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -26,36 +50,58 @@ body {
     background-size: cover;
     background-position: center;
     height: 300px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--color-text);
     font-size: 2em;
 }
+
 .cards {
     display: flex;
     justify-content: space-around;
     margin: 20px;
     flex-direction: column;
 }
+
 .card {
-    background-color: #f4f4f4;
+    background-color: var(--color-surface);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     padding: 20px;
     margin-top: 20px;
     flex-grow: 1;
     transition: transform 150ms ease, box-shadow 150ms ease;
+    color: var(--color-text);
 }
 .card:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
-/* learn more link that appears as a small subscript below the main text */
+
+/* Learn more chip */
 #learn-more {
     font-size: 0.4em;
     margin-left: 5px;
     vertical-align: sub;
-    color: blue;
+}
+#learn-more a {
+    background-color: var(--color-highlight-bg);
+    color: var(--color-text-on-highlight);
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: none;
     cursor: pointer;
 }
+#learn-more a:hover {
+    filter: brightness(0.95);
+}
+
+/* Utility to highlight any text */
+.highlight {
+    background-color: var(--color-highlight-bg);
+    color: var(--color-text-on-highlight);
+    padding: 0.1em 0.3em;
+    border-radius: 0.25em;
+}
+
+
