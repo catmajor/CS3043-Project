@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More - CS 3043 Proj</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="hamburger" aria-label="Open menu">☰ Menu</label>
+    <a href="index.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Home</a>
+    <a href="nikita.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Tracking Online and Data Safety</a>
+    <a href="vu.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Vu Item</a>
+    <a href="abhi.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Policing and Tracking Using AI</a>
+  </div>
+
+  <div class="banner">
+    <h1>Learn More</h1>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>What this demonstrates</h2>
+      <p>
+        The location shown above was captured from the QR code you scanned. The code encodes
+        a simple numeric identifier that maps to a campus location. When you navigate across
+        pages, that identifier is preserved in the URL using a small helper, illustrating how
+        easily contextual data can be collected and propagated during normal browsing.
+      </p>
+      <p>
+        This is a minimal example of passive data collection: by following links, your context
+        (in this case, where you scanned from) is carried along without any extra prompts.
+      </p>
+      <p>
+        Continue exploring:
+        <a href="index.html" onclick="this.href = linkWithContext(this.getAttribute('href'))">Back to Home</a>.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="util.js"></script>
+</body>
+<html>
